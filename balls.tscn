@@ -1,9 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://bxx6jmx5va6rg"]
+[gd_scene load_steps=3 format=3 uid="uid://bxx6jmx5va6rg"]
 
 [ext_resource type="Texture2D" uid="uid://dqk7hvnsb1cks" path="res://icon.svg" id="1_15pdi"]
+[ext_resource type="Script" path="res://balls.gd" id="1_re1l6"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_re1l6")
 
 [node name="Icon" type="Sprite2D" parent="."]
 position = Vector2(477, 579)
 texture = ExtResource("1_15pdi")
+
+[node name="curBeat" type="Label" parent="."]
+offset_left = 564.21
+offset_top = 256.291
+offset_right = 604.21
+offset_bottom = 279.291
+text = "palce gold toxt"

@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Fps="*res://auto load/FPS.tscn"
+Conductor="*res://auto load/Conductor.gd"
 
 [display]
 
