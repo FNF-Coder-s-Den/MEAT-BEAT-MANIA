@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://hju0ux6s5nqi"]
+
+[ext_resource type="Script" path="res://auto load/FPS.gd" id="1_sofjk"]
+
+[node name="FPS" type="Label"]
+text = "FPS: 60
+
+RAM: 0 MB"
+script = ExtResource("1_sofjk")

@@ -11,8 +11,19 @@ config_version=5
 [application]
 
 config/name="MEAT BEAT MAINA"
+run/main_scene="res://balls.tscn"
 config/features=PackedStringArray("4.0", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Fps="*res://auto load/FPS.tscn"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/vsync/vsync_mode=0
 
 [rendering]
 
