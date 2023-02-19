@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://y71kgho7ohy6"]
+
+[ext_resource type="Script" path="res://scripts/menu/credits menu.gd" id="1_8cif8"]
+[ext_resource type="Texture2D" uid="uid://bf6h3xwn1cgwc" path="res://assets/images/menus/void.png" id="2_axpbg"]
+[ext_resource type="Texture2D" uid="uid://bie426nb2sb8f" path="res://assets/images/menus/swoed.png" id="3_u41po"]
+[ext_resource type="Texture2D" uid="uid://crvowgwy3ghq1" path="res://assets/images/menus/alex.png" id="4_0y8cw"]
+
+[node name="credits menu" type="Node2D"]
+script = ExtResource("1_8cif8")
+
+[node name="left" type="Button" parent="."]
+offset_left = 22.0
+offset_top = 272.0
+offset_right = 89.0
+offset_bottom = 384.0
+theme_override_font_sizes/font_size = 52
+text = "<"
+
+[node name="right" type="Button" parent="."]
+offset_left = 1190.0
+offset_top = 279.0
+offset_right = 1257.0
+offset_bottom = 391.0
+theme_override_font_sizes/font_size = 52
+text = ">
+"
+
+[node name="icon" type="Control" parent="."]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 0
+offset_left = 629.0
+offset_top = 323.0
+offset_right = 669.0
+offset_bottom = 363.0
+scale = Vector2(2, 2)
+
+[node name="Void" type="Sprite2D" parent="icon"]
+position = Vector2(20, 7)
+texture = ExtResource("2_axpbg")
+
+[node name="Sword" type="Sprite2D" parent="icon"]
+position = Vector2(13, 2)
+texture = ExtResource("3_u41po")
+
+[node name="Alex" type="Sprite2D" parent="icon"]
+position = Vector2(15, 3)
+texture = ExtResource("4_0y8cw")
+
+[connection signal="pressed" from="left" to="." method="_on_left_pressed"]
